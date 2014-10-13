@@ -13,3 +13,59 @@
  *= require_tree .
  *= require_self
  */
+
+body{
+  margin: 0px;
+  color: green;
+  background: lightgrey;
+}
+
+h1{
+  font-family: 'Contrail One', cursive;
+  color: rgb(212,57,43);
+}
+
+h2{
+  color: orange;
+}
+
+p{
+  font-family: 'Quattrocento Sans', sans-serif;
+  font-size: 30px;
+  line-height: 20px;
+}
+
+
+#my-header{
+  text-align: center;
+  background-image: url("http://lorempixel.com/1300/600/nature/");
+  background-size: cover;
+  padding: 150px;
+  color: white;
+  text-shadow: 1px 1px 5px black;
+}
+
+.feature{
+  padding: 50px;
+  font-weight: 300px;
+}
+
+.feature img{
+  padding: 20px;
+  border: 2px solid black;
+  border-radius: 50%;
+}
+
+#my-footer{
+  padding: 30px;
+  background: rgb(30, 30, 30);
+  color: lightgrey;
+  margin-top: 20px;
+}
+
+#my-footer a {
+  color: lightgrey;
+}
+#my-footer a:hover {
+  color: white;
+}
