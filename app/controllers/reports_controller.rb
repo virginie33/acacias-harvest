@@ -23,6 +23,20 @@ class ReportsController < ApplicationController
 		@report = Report.find(params[:id])
 	end
 
+	def update
+		@report = Report.find(params[:id])
+		@report.update_attributes(report_params)
+      	redirect_to reports_path
+      	flash[:success] = "Rapport mis à jour avec succès"
+	end
+
+	def destroy
+		@report = Report.find(params[:id])
+		@report.destroy
+      	redirect_to reports_path
+      	flash[:success] = "Rapport supprimé avec succès"		
+	end
+
 private
 	def report_params
 		params.require(:report).permit(:user_name, :forest_name, :observation)
