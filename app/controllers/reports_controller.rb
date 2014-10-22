@@ -2,7 +2,6 @@ class ReportsController < ApplicationController
 	# before_action :report_id
 
 	def index
-		@report = Report.new
 		@reports = Report.all
 	end
 	
@@ -14,6 +13,28 @@ class ReportsController < ApplicationController
 		else
 			render 'index'
 		end
+	end
+
+	def new
+		@report = Report.new
+	end
+
+	def edit
+		@report = Report.find(params[:id])
+	end
+
+	def update
+		@report = Report.find(params[:id])
+		@report.update_attributes(report_params)
+      	redirect_to reports_path
+      	flash[:success] = "Rapport mis à jour avec succès"
+	end
+
+	def destroy
+		@report = Report.find(params[:id])
+		@report.destroy
+      	redirect_to reports_path
+      	flash[:success] = "Rapport supprimé avec succès"		
 	end
 
 private
