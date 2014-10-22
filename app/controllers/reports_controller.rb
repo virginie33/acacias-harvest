@@ -2,7 +2,6 @@ class ReportsController < ApplicationController
 	# before_action :report_id
 
 	def index
-		@report = Report.new
 		@reports = Report.all
 	end
 	
@@ -14,6 +13,14 @@ class ReportsController < ApplicationController
 		else
 			render 'index'
 		end
+	end
+
+	def new
+		@report = Report.new
+	end
+
+	def edit
+		@report = Report.find(params[:id])
 	end
 
 private
