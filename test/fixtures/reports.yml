@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  forest_name: MyString
+  user_name: MyString
+  observation: MyText
+
+two:
+  forest_name: MyString
+  user_name: MyString
+  observation: MyText
