@@ -4,10 +4,9 @@ DIRECTION="git@heroku.com:acacias.git"
 
 echo "********** Déploiement **********"
 
-heroku login && \
+git pull && \
 git add . && \
-git commit -am "Auto Commit" && \
-git push heroku origin master && \
-heroku run rake db:migrate
+git push $DIRECTION master && \
+heroku run rake db:migrate -a acacias
 
 echo "********** OK **********"
