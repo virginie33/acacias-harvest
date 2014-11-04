@@ -1,0 +1,19 @@
+
+<h2>Nouvelle entrée</h2>
+
+    <%= form_for @report do |r| %>
+
+    <%= r.label :user_name, 'Nom de l\'utilisateur'%><br>
+    <%= r.text_field :user_name %><br>
+
+
+    <%= r.label :forest_name, 'Nom de la forêt' %><br>
+    <%= r.text_field :forest_name %><br>
+
+
+    <%= r.label :observation, 'Rapport'%><br>
+    <%= r.text_area :observation %><br>
+
+    <%= r.submit 'Envoyer' %>
+
+<% end %>

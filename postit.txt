@@ -1,0 +1,16 @@
+
+
+- Contact client
+Ecrire un mail pour demander grosso modo les infos à la cliente et la charte graphique
+
+- Gestion des utilisateurs
+Création d'un parcours utilisateur avec accès restreint par mdp
+
+- Création Readme
+
+
+- Script de déploiement
+
+
+- Rendre possible l'internationalisation
+i18n
