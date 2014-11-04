@@ -1,4 +1,12 @@
 fr:
-  welcome:
-    index:
-      titre: "Acacias for all : la Tunisie"
+    layouts:
+        application:
+            new_report: "Nouveau rapport"
+            reports_list: "Liste des rapports"
+    reports:
+        new:
+            new_entry_title: "Nouveau rapport"
+            user_name: "Nom de l'utilisateur"
+            forest_name: "Nom de la forêt"
+            observation: "Observation"
+            send: "Envoyer"
