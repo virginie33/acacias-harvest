@@ -17,3 +17,5 @@
 
 /*/*/.keep
 *~
+
+/config/secrets.yml

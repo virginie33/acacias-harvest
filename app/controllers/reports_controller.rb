@@ -1,5 +1,8 @@
-class ReportsController < ApplicationController
-	# before_action :report_id
+KEYS = YAML.load_file("#{Rails.root.to_s}/config/secrets.yml")
+
+class ReportsController < ApplicationController	
+	
+	http_basic_authenticate_with name: KEYS['username'], password: KEYS['password']
 
 	def index
 		@reports = Report.all
@@ -42,7 +45,4 @@ private
 		params.require(:report).permit(:user_name, :forest_name, :observation)
 	end
 
-	# def report_id
-	# 	@report = Report.find(params[:id])
-	# end
 end

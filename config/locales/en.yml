@@ -3,6 +3,12 @@ en:
         application:
             new_report: "New report"
             reports_list: "List of the reports"
+    welcome:
+        index:
+            breathe: "Breathe"
+            participate: "Get involved"
+            legacy: "Legacy"
+
     reports:
         new:
             new_entry_title: "New entry"
