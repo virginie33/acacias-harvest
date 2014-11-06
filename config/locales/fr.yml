@@ -10,3 +10,6 @@ fr:
             forest_name: "Nom de la forêt"
             observation: "Observation"
             send: "Envoyer"
+    welcome:
+        index:
+            subtitle_breathe: "J'adore <strong>respirer</strong>"

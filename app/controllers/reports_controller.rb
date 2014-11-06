@@ -1,48 +1,44 @@
-KEYS = YAML.load_file("#{Rails.root.to_s}/config/secrets.yml")
-
 class ReportsController < ApplicationController	
-	
-	http_basic_authenticate_with name: KEYS['username'], password: KEYS['password']
 
-	def index
-		@reports = Report.all
-	end
-	
-	def create
-		@report = Report.new(report_params)
-		if @report.save
-			redirect_to reports_path
-			flash[:success] = "Successfully created !"
-		else
-			render 'index'
-		end
-	end
+  def index
+    @reports = Report.all
+  end
 
-	def new
-		@report = Report.new
-	end
+  def create
+    @report = Report.new(report_params)
+    if @report.save
+      redirect_to reports_path
+      flash[:success] = "Successfully created !"
+    else
+      render 'index'
+    end
+  end
 
-	def edit
-		@report = Report.find(params[:id])
-	end
+  def new
+    @report = Report.new
+  end
 
-	def update
-		@report = Report.find(params[:id])
-		@report.update_attributes(report_params)
-      	redirect_to reports_path
-      	flash[:success] = "Rapport mis à jour avec succès"
-	end
+  def edit
+    @report = Report.find(params[:id])
+  end
 
-	def destroy
-		@report = Report.find(params[:id])
-		@report.destroy
-      	redirect_to reports_path
-      	flash[:success] = "Rapport supprimé avec succès"		
-	end
+  def update
+    @report = Report.find(params[:id])
+    @report.update_attributes(report_params)
+    redirect_to reports_path
+    flash[:success] = "Rapport mis à jour avec succès"
+  end
 
-private
-	def report_params
-		params.require(:report).permit(:user_name, :forest_name, :observation)
-	end
+  def destroy
+    @report = Report.find(params[:id])
+    @report.destroy
+    redirect_to reports_path
+    flash[:success] = "Rapport supprimé avec succès"		
+  end
+
+  private
+  def report_params
+    params.require(:report).permit(:user_name, :forest_name, :observation)
+  end
 
 end
