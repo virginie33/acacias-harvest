@@ -2,6 +2,16 @@
 
 Projet Acacias For All. This rails project use PostgreSQL database.
 
+Il s'agit de récolter des données sur l'évolution des forêts et de mesurer l'impact que peut avoir la reforestation.
+
+L'idée de départ concernait uniquement les Acacias, en Tunisie, mais la porteuse de projet a souhaiter que l'initiative puisse s'élargir au monde pour tout type de forêt.
+
+L'application web permet de faire des rapports sur n'importe quelle forêt, de consulter ces rapports, et son usage a été sécurisé par l'ajout d'un système de logging.
+
+adresse du serveur heroku : https://acacias.herokuapp.com/
+
+adresse du projet GitHub : https://github.com/simplonco/acacias
+
 To use it simply do a :
 * `bundle`
 * `rake db:migrate`
