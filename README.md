@@ -1,4 +1,4 @@
-#Acacias
+# Acacias
 
 Projet Acacias For All. This rails project use PostgreSQL database.
 
@@ -17,11 +17,9 @@ To use it simply do a :
 * `rake db:migrate`
 * `rails s`
 
-###Licence 
+## Licence
 
 The MIT License
-
-Copyright (c) 2010-2014 Google, Inc. http://angularjs.org
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
