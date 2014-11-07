@@ -5,12 +5,15 @@ en:
             reports_list: "List of the reports"
     welcome:
         index:
+            top_image_text: "Plant trees in Tunisia with your help"
+            header_text: "Acacias for All : Our actions"
             breathe: "Breathe"
             breathe_subtitle: "I love breathing"
             participate: "Get involved"
             participate_subtitle: "Help plantation a human mission"
             legacy: "Legacy"
             legacy_subtitle: "Fix the ozone layer for our children"
+            learn_more: "learn more"
     reports:
         new:
             new_entry_title: "New entry"

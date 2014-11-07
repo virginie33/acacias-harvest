@@ -5,12 +5,15 @@ fr:
             reports_list: "Liste des rapports"
     welcome:
         index:
+            top_image_text: "Plantation d'arbres en Tunisie grace à vous"
+            header_text: "Acacias for All : Nos actions"
             breathe: "Respirer"
             breathe_subtitle: "J'adore <strong>respirer</strong>"
             participate: "S'impliquer"
             participate_subtitle: "Aider à la plantation, une mission humaine"
             legacy: "Contribuer"
             legacy_subtitle: "Réparer la couche d'ozone pour nos enfants"
+            learn_more: "En savoir plus"
     reports:
         new:
             new_entry_title: "Nouveau rapport"

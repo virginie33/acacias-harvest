@@ -1,26 +1,64 @@
-<div class="feature, text-center">
-  <h2><%= t ".breathe" %></h2>
-  <p><%= t('.breathe_subtitle').html_safe %></p>
-  <%= image_tag("energy_300x300.png") %>
+<div class="image-top">
+  <header id="top" class="header">
+        <div class="text-vertical-center">
+            <h1>Accacias for All</h1>
+            <h3><%= t ".top_image_text" %></h3>
+            <br>
+            <a href="#about" class="btn btn-dark btn-lg">Find Out More</a>
+        </div>
+    </header>
 </div>
+<div class="container">
+  <div class="row">
+            <div class="col-lg-12">
+                <h1 class="page-header text-center">
+                    <%= t ".header_text" %>
+                </h1>
+            </div>
+            <div class="col-md-4">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4><i class="fa fa-fw fa-check"></i> <%= t('.breathe').html_safe %></h4>
+                    </div>
+                    <div class="panel-body">
+                        <p><%= t('.breathe_subtitle').html_safe %></p>
+                        <%= image_tag("energy_300x300.png") %>
+                        <a href="#" class="btn btn-default"><%= t('.learn_more')%></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4><i class="fa fa-fw fa-gift"></i> <%= t('.participate') %></h4>
+                    </div>
+                    <div class="panel-body">
+                        <p><%= t('.participate_subtitle') %></p>
+                        <%= image_tag("linux.png") %>
+                        <a href="#" class="btn btn-default"><%= t('.learn_more')%></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4><i class="fa fa-fw fa-compass"></i> <%= t('.legacy')%></h4>
+                    </div>
+                    <div class="panel-body">
+                        <p><%= t('.legacy_subtitle')%></p>
+                        <%= image_tag("icon_6693_300x300.png")%>
+                        <a href="#" class="btn btn-default"><%= t('.learn_more')%></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+  
 
-<div class="feature, text-center">
-  <h2><%= t ".participate" %></h2>
-  <p><%= t ".participate_subtitle" %></p>
-  <%= image_tag("linux.png") %>
-</div>
-
-<div class="feature, text-center">
-  <h2><%= t ".legacy" %></h2>
-  <p><%= t ".legacy_subtitle" %></p>
-  <%= image_tag("icon_6693_300x300.png")%>
-</div>
-
-<div id="my-footer">
-  <ul class ="text-center, list-inline">
-    <li><a href="#"><i class="fa fa-youtube"></i></a></li>
-    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-    <li><a href="#"><i class="fa fa-instagram"></i></a></li>
-  </ul>
-</div>
+  <div id="my-footer">
+    <ul class ="text-center, list-inline">
+      <li><a href="#"><i class="fa fa-youtube"></i></a></li>
+      <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+      <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+      <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+    </ul>
+  </div>

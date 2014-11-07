@@ -6,16 +6,16 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Acacias</title>
 
-	<%= stylesheet_link_tag '//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css', media: 'all' %>
-	<%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
-	<%= javascript_include_tag '//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js' %>
- 	<%= csrf_meta_tags %>
+    <%= stylesheet_link_tag "bootstrap" %>
+    <%= stylesheet_link_tag "application" %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+    <%= javascript_include_tag '//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js' %>
+    <%= csrf_meta_tags %>
 </head>
 
-<body class="container">
+<body>
 
-
-<div class="navbar">
+    <div class="navbar navbar-default collapse navbar-collapse"">
     <div class="navbar-header">
         <a class="navbar-brand" href="/">A4All</a>
     </div>
@@ -29,10 +29,7 @@
             <li><%= link_to "English", locale: :en %></li>
         </ul>
     </div>
-</div>    
-
-
-	<%= yield %>
-
+</div>  
+       <%= yield %>
 </body>
 </html>
