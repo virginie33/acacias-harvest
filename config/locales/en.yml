@@ -6,9 +6,11 @@ en:
     welcome:
         index:
             breathe: "Breathe"
+            breathe_subtitle: "I love breathing"
             participate: "Get involved"
+            participate_subtitle: "Help plantation a human mission"
             legacy: "Legacy"
-
+            legacy_subtitle: "Fix the ozone layer for our children"
     reports:
         new:
             new_entry_title: "New entry"

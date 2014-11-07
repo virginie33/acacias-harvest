@@ -3,6 +3,14 @@ fr:
         application:
             new_report: "Nouveau rapport"
             reports_list: "Liste des rapports"
+    welcome:
+        index:
+            breathe: "Respirer"
+            breathe_subtitle: "J'adore <strong>respirer</strong>"
+            participate: "S'impliquer"
+            participate_subtitle: "Aider à la plantation, une mission humaine"
+            legacy: "Contribuer"
+            legacy_subtitle: "Réparer la couche d'ozone pour nos enfants"
     reports:
         new:
             new_entry_title: "Nouveau rapport"
@@ -10,6 +18,3 @@ fr:
             forest_name: "Nom de la forêt"
             observation: "Observation"
             send: "Envoyer"
-    welcome:
-        index:
-            subtitle_breathe: "J'adore <strong>respirer</strong>"
