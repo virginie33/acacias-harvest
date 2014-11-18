@@ -15,21 +15,19 @@
 
 <body>
 
-    <div class="navbar navbar-default collapse navbar-collapse"">
-    <div class="navbar-header">
-        <a class="navbar-brand" href="/">A4All</a>
-    </div>
-    <div class="navbar-collapse">
-        <ul class="nav navbar-nav">
-            <li><a href="/<%= locale %>/reports"><%= t ".reports_list" %></a></li>
-            <li><a href="/<%= locale %>/reports/new"><%= t ".new_report" %></a></li>
-        </ul>
-        <ul class="nav navbar-nav navbar-right">
-            <li><%= link_to "Français", locale: :fr %></li>
-            <li><%= link_to "English", locale: :en %></li>
-        </ul>
-    </div>
-</div>  
-       <%= yield %>
+    <header>
+        <h1>Acacias for All</h1>
+        <h2>A responsible initiative</h2>
+        <nav>
+            <ul>
+                <li><a href="/<%= locale %>/reports"><%= t ".reports_list" %></a></li>
+                <li><a href="/<%= locale %>/reports/new"><%= t ".new_report" %></a></li>
+                <li><%= link_to "Français", locale: :fr %></li>
+                <li><%= link_to "English", locale: :en %></li>
+            </ul>
+        </nav>
+    </header>
+
+    <%= yield %>
 </body>
 </html>
