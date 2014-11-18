@@ -1,25 +1,174 @@
-html,body {
-  width: 100%;
-  height: 100%;
-  font-family: "Source Sans Pro","Helvetica Neue",Helvetica,Arial,sans-serif;
+/*Thanks to lingulo.com for the help*/
+
+body {
+  border-top: 5px solid #e56038;
+  background: #ebe8de
+  font-family: 'Open Sans',sans-serif;
+  color: #333333;
 }
 
-.image-top {
-  height: 400px;
-  background-image: url(http://upload.wikimedia.org/wikipedia/commons/e/e7/Le_cime_dei_Sette_Fratelli.jpg);
-  background-size: cover;
+/*Search form*/
+
+input {
+  font-family: 'Open Sans', sans-serif;
+  font-size:16px;
+  padding: 7px;
+  outline: 0;
+  border:0;
+  width:250px;
+  background: #EBE8DE;
+  border-radius:5px;
 }
 
-.text-vertical-center {
-  /*display: table-cell;*/
-  text-align: center;
-  vertical-align: middle;
+input[type=submit]{
+  width:auto;
+  padding: 5px 18px;
+  line-height:25px;
+  text-shadow:none;
+  cursor:pointer;
+  box-shadow: none;
+  background: #333333;
+  color: #fff;
 }
 
-.text-vertical-center h1 {
-  margin: 0;
-  padding: 0;
-  font-size: 4.5em;
-  font-weight: 700;
-  color: rgba(253, 255, 252, 1);
+p {
+  margin: 5px 0;
+  line-height: 25px;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  transition: color .5s ease;
+}
+
+strong {
+  font-weight: bold;
+}
+
+figcaption {
+  line-height: 25px;
+  font-size:14px;
+  width:200px;
+}
+
+figcaption strong {
+  border-bottom: 1px solid #D6D0C1;
+  padding-bottom:10px;
+  margin: 10px 0;
+  display:block;
+}
+
+/*Top header and navbar*/
+
+header {
+  position:relative;
+  width:auto;
+  max-width:900px;
+  margin: 0 auto 20px auto;
+}
+
+header h1 {
+  margin: 35px 0 0 0;
+  font-size: 55px;
+  color: #e56038;
+  font-family: 'Molengo', cursive;
+}
+
+header p {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  color: #4A463B;
+  margin-left:132px;
+}
+
+nav ul {
+  list-style:none;
+}
+
+nav ul li {
+  display:block;
+  float:left;
+  padding:3px 15px;
+}
+
+nav ul li a {
+  font-family: 'Open Sans', sans-serif;
+  text-transform: uppercase;
+  transition: all .25s ease;
+}
+
+nav ul li a:hover {
+  color: #E56038;
+}
+
+/*Image block*/
+
+.image-centered {
+  display:block;
+  width: 600px;
+}
+
+.text-over-imgblock {
+  line-height: 25px;
+  font-family: 'Open Sans', sans-serif;
+  width:400px;
+  position:absolute;
+  top:25%;
+  left:15%;
+  z-index:11;
+}
+
+.container {
+  width:auto;
+  margin: 0 auto;
+  position:relative;
+}
+
+.text-over-imgblock h3 {
+  color:#EBE8DE;
+  font-size:25px;
+  font-weight:bold;
+  margin-bottom:10px;
+  background-color:#333333;
+  padding:10px 15px;
+  border-radius: 3px;
+  display:inline-block;
+}
+
+.text-over-imgblock p {
+  font-style: bold;
+  margin:0 0 30px 0;
+  color:#4a463b;
+  background-color:#EBE8DE;
+  padding:10px 15px;
+  border-radius: 5px;
+}
+
+/*Search*/
+
+#spacer {
+  width:auto;
+  height:70px;
+  background-color:#e56038;
+  position:relative;
+  font-family: 'Open Sans', sans-serif;
+  color:#fff;
+  font-size:18px;
+}
+
+#spacer p {
+  margin-top:22px;
+  width:auto;
+  position:absolute;
+  left:50%;
+  margin-left:-450px;
+}
+
+#spacer .search {
+  margin-top:15px;
+  width:auto;
+  position:absolute;
+  right:50%;
+  margin-right:-480px;
 }
