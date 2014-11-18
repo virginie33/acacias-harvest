@@ -1,0 +1,24 @@
+Concernant les données à remonter, il s'agit des questions suivantes :
+une fois connecté (donc nous avons son nom, prénom, téléphone)
+
+Village visité :
+Gouvernorat : 
+Nombre d'agriculteurs visités :
+Nombre de femmes du village bénéficiaires : 
+Nombre d'arbres plantés : 
+Superficie visitée : 
+Nombre d'arbres en mauvais état :
+Les agriculteurs rencontrent-ils des problèmes ? oui/non
+Les agriculteurs demandent-ils une formation ? oui/non
+Les agriculteurs demandent-ils des arbres à planter? oui/non
+Les agriculteurs ont-ils des produits à vendre? oui/non
+Nom des agriculteurs rencontrés :
+Photo 1 :
+Description :
+Photo 2 :
+Description : 
+Photo 3 : 
+Description :
+Commentaire : 
+
+Concernant la charte graphique, pour le moment je n'ai rien car la graphiste qui devait travailler avec moi a trouver un emploi, mais je vais essayer de vous envoyer quelque chose d'ici demain.
