@@ -1,13 +1,13 @@
-.image-top {
-  height: 400px;
-  background-image: url(http://upload.wikimedia.org/wikipedia/commons/e/e7/Le_cime_dei_Sette_Fratelli.jpg);
-  background-size: cover;
-}
-
 html,body {
   width: 100%;
   height: 100%;
   font-family: "Source Sans Pro","Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+.image-top {
+  height: 400px;
+  background-image: url(http://upload.wikimedia.org/wikipedia/commons/e/e7/Le_cime_dei_Sette_Fratelli.jpg);
+  background-size: cover;
 }
 
 .text-vertical-center {
