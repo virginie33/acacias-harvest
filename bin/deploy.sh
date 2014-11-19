@@ -4,7 +4,7 @@ DIRECTION="git@heroku.com:acacias.git"
 
 echo "********** Déploiement **********"
 
-bundle exec rake && \
+bundle exec rspec && \
 git pull origin master && \
 git push origin master && \
 git push $DIRECTION master && \
