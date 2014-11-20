@@ -1,19 +1,23 @@
-<div class="container">
+<div class="container-report">
+        <div class="report-list-title">
+          <h3><%= t ".edit_entry_title", class: "report-list-title" %></h3>
+        </div>
+
 <%= form_for @report, url: reports_path do |r| %>
 
-	<%= r.label :user_name, 'Nom de l\'utilisateur'%><br>
-	<%= r.text_field :user_name %><br>
+	<%= r.label :user_name, t(".user_name") %><br>
+	<%= r.text_field :user_name, class: 'input-report' %><br>
 
 
-	<%= r.label :forest_name, 'Nom de la forêt' %><br>
-	<%= r.text_field :forest_name %><br>
+	<%= r.label :forest_name, t(".forest_name") %><br>
+	<%= r.text_field :forest_name, class: 'input-report' %><br>
 
 
-	<%= r.label :observation, 'Rapport'%><br>
-	<%= r.text_area :observation %><br>
+	<%= r.label :observation, t(".observation") %><br>
+	<%= r.text_area :observation, class: 'input-report' %><br>
 
-	<%= r.submit 'Envoyer' %>
+	<%= r.submit t(".send") %>
 
-<% end %>
+  <% end %>
 
 </div>

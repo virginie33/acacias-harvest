@@ -1,29 +1,31 @@
-<div class="container">
-<h2>Liste des rapports</h2>
-
-<table class="table table-hover table-bordered">
-  <thead>
-    <tr>
-      <th>Utilisateur</th>
-      <th>Nom forêt</th>
-      <th>Commentaire</th>
-      <th>Actions</th>
-    </tr>
-  </thead>
-  <tbody>
-    <% @reports.each do |report| %>
-    <tr>
-      <td><%= report.user_name %></td>
-      <td><%= report.forest_name %></td>
-      <td><%= report.observation %></td>
-      <td>
-        <%= link_to('Modifier', edit_report_path(report), class: 'btn btn-success btn-xs') %>
-        <%= link_to('Supprimer', report_path(report), method: :delete, class: 'btn btn-danger btn-xs', data: { confirm: 'Sûr ?' }) %>
-      </td>
-    </tr>
-    <% end %>
-  </tbody>
-</table>
-
-<%= link_to('Ajouter un questionnaire', new_report_path, class: 'btn btn-primary pull-right') %>
+<div class="container-report">
+  <div class="report-list-title">
+    <h2>Liste des rapports</h2>
+  </div>
+  <div class='datagrid'>
+  <table>
+    <thead>
+      <tr>
+        <th>Utilisateur</th>
+        <th>Nom forêt</th>
+        <th>Commentaire</th>
+        <th>Actions</th>
+      </tr>
+    </thead>
+    <tbody>
+      <% @reports.each do |report| %>
+        <tr>
+          <td><%= report.user_name %></td>
+          <td><%= report.forest_name %></td>
+          <td><%= report.observation %></td>
+          <td>
+            <%= link_to('Modifier', edit_report_path(report), class: 'report-button-sml') %>
+            <%= link_to('Supprimer', report_path(report), method: :delete, class: 'report-button-sml', data: { confirm: 'Sûr ?' }) %>
+          </td>
+        </tr>
+      <% end %>
+    </tbody>
+  </table>
+</div>
+  <%= link_to'Ajouter un questionnaire', new_report_path, class: 'report-button' %>
 </div>
