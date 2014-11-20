@@ -1,6 +1,7 @@
 en:
     layouts:
         application:
+            subtitle_h1: "A responsible initiative"
             new_report: "New report"
             reports_list: "List of the reports"
     welcome:
@@ -16,14 +17,10 @@ en:
             learn_more: "learn more"
             title_example: "Title type for translation."
             sentence_example: "This is just some text that will be changed later, we need a few caracters to fill spaces."
-            paragraph_example: " 1 O foolish Galatians, who hath bewitched you, that ye should not obey the truth, before whose eyes Jesus Christ hath been evidently set forth, crucified among you?
-
- 2 This only would I learn of you, Received ye the Spirit by the works of the law, or by the hearing of faith?
-
- 3 Are ye so foolish? having begun in the Spirit, are ye now made perfect by the flesh?
-
-"
-    reports:
+            paragraph_example: " 1 O foolish Galatians, who hath bewitched you, that ye should not obey the truth, before whose eyes Jesus Christ hath been evidently set forth, crucified among you?"
+            search_field: "Forest name..."
+            search_button: "Search"
+    reports: 
         new:
             new_entry_title: "New entry"
             user_name: "User name"

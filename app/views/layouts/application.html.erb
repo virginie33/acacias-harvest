@@ -15,14 +15,15 @@
 <body>
 
     <header>
-        <h1>Acacias for All</h1>
-        <h2>A responsible initiative</h2>
+        <h1><a href="/">Acacias for All</a></h1>
+        <h2><%= t(".subtitle_h1") %></h2>
         <nav>
             <ul>
                 <li><a href="/<%= locale %>/reports"><%= t ".reports_list" %></a></li>
                 <li><a href="/<%= locale %>/reports/new"><%= t ".new_report" %></a></li>
-                <li><%= link_to "Français", locale: :fr %></li>
-                <li><%= link_to "English", locale: :en %></li>
+                <li><%= link_to "FR", locale: :fr %></li>
+                <li>|</li>
+                <li><%= link_to "EN", locale: :en %></li>
             </ul>
         </nav>
     </header>

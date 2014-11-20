@@ -1,6 +1,7 @@
 fr:
     layouts:
         application:
+            subtitle_h1: "Une iniative responsable"
             new_report: "Nouveau rapport"
             reports_list: "Liste des rapports"
     welcome:
@@ -14,9 +15,11 @@ fr:
             legacy: "Contribuer"
             legacy_subtitle: "Réparer la couche d'ozone pour nos enfants"
             learn_more: "En savoir plus"
-            title_example: "Titre type pour l'example"
+            title_example: "Titre type pour l'exemple"
             sentence_example: "Ceci est une phrase qui sera changée plus tard, c'est juste pour remplir l'espace"
             paragraph_example: "Celui qui est la Parole est devenu un homme et il a vécu parmi nous, plein de grâce et de vérité. Nous avons vu sa gloire, la gloire que le Fils unique reçoit du Père. 15Jean lui a rendu témoignage ; il s'est écrié : « C'est de lui que j'ai parlé quand j'ai dit : “Il vient après moi, mais il est plus important que moi, car il existait déjà avant moi.”  » 16Nous avons tous reçu notre part des richesses de sa grâce ; nous avons reçu une bénédiction après l'autre. "
+            search_field: "Nom d'une forêt..."
+            search_button: "Rechercher"
     reports:
         new:
             new_entry_title: "Nouveau rapport"

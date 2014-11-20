@@ -95,7 +95,7 @@ nav ul {
 nav ul li {
   display:block;
   float:left;
-  padding:3px 15px;
+  padding:3px 11px;
 }
 
 nav ul li a {
@@ -375,4 +375,122 @@ footer .wrapper .column h4 {
   position:absolute;
   clip: rect(1px 1px 1px 1px); /* IE6 & 7 */
   clip: rect(1px, 1px, 1px, 1px);
+}
+
+@media(max-width:915px) {
+    #boxcontent article {
+        height: 70px;
+        float: none;
+        width: 60%;
+        margin: 30px auto 0 auto;
+    }
+
+    #spacer {
+        font-size: 15px;
+    }
+
+    #spacer .search {
+        margin-top: 19px;
+        margin-right: -385px;
+    }
+
+    #spacer p {
+        margin-left: -370px;
+    }
+
+    input {
+        padding: 4px;
+        font-size: 14px;
+    }
+
+    input[type="submit"] {
+        padding: 1px 14px;
+    }
+
+    #four_columns {
+        width: 500px;
+    }
+
+    #four_columns .img-item:nth-of-type(3) ,
+    #four_columns .img-item:nth-of-type(4) {
+        margin-top: 25px;
+    }
+
+    #text_columns article.column1,
+    #text_columns .column2 {
+        float: none;
+        margin: 50px auto 0 auto;
+        max-width: 500px;
+    }
+
+    .column2 .row {
+        float: none;
+        margin: 0 0 40px 50px;
+    }
+
+    footer .wrapper .column {
+        width: 230px;
+        font-size: 12px;
+
+    }
+
+    .container {
+      display:none
+    }
+}
+
+@media(max-width:765px) {
+    .container {
+        top: -1500px;
+    }
+
+    header {
+        height: 120px;
+    }
+
+    header nav {
+        top: 100px;
+        right: auto;
+        bottom: auto;
+        left: 50%;
+        margin-left: -184px;
+    }
+
+    #spacer {
+        height: 100px;
+    }
+
+    #spacer p {
+        position: static;
+        margin: 0 auto;
+        padding: 15px 0 7px 0;
+        text-align: center;
+    }
+
+    #spacer .search {
+        position: static;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    footer {
+        height: auto;
+        padding-bottom: 70px;
+    }
+
+    footer .wrapper {
+        width: 350px;
+        margin: 0 auto;
+    }
+
+    footer .wrapper .column {
+        float: none;
+        width: auto;
+        margin-top: 30px;
+        font-size: 14px;
+    }
+
+    footer .wrapper .social {
+        display: none;
+    }
 }

@@ -8,12 +8,12 @@
 </section>
 
     <section id="spacer">
-        <h2 class="hidden"><%= t ".title_example" %></h2>
-            <p><%= t ".sentence_example" %></p>
+        <h2 class="hidden"><%= t(".title_example") %></h2>
+            <p><%= t(".sentence_example") %></p>
             <div class="search">
                 <form action="#">
-                    <input type="text" name="sitesearch" value="Enter a word..."/>
-                    <input type="submit" name="start_search" class="button" value="Search"/>
+                    <input type="text" name="sitesearch" onfocus="this.value='';" value="<%= t(".search_field") %>"/>
+                    <input type="submit" name="start_search" class="button" value="<%= t(".search_button") %>"/>
                 </form>
             </div>
     </section>
@@ -109,11 +109,9 @@
         <h3 class="hidden"><%= t ".title_example" %></h3>
         <article class="row">
             <h4 class="hidden"><%= t ".title_example" %></h4>
-            <img src="img/icon.png" width="80" class="rocket" alt="Some alt text"/>
         <p><%= t ".sentence_example" %></p></article>
         <article class="row">
             <h4 class="hidden"><%= t ".title_example" %></h4>
-            <img src="img/icon.png" width="80" class="clock" alt="Some alt text"/>
         <p><%= t ".sentence_example" %>.</p>
         </article>
     </section>
@@ -125,12 +123,12 @@
         <h3 class="hidden">Copyright notice</h3>
         <div class="wrapper">
             <div class="social">
-                <a href="#"><img src="img/twitter.png" alt="google plus" width="25"/></a>
-                <a href="#"><img src="img/twitter.png" alt="youtube" width="25"/></a>
-                <a href="#"><img src="img/twitter.png" alt="bebo" width="25"/></a>
-                <a href="#"><img src="img/twitter.png" alt="xing" width="25"/></a>
+                <a href="#"><%= image_tag("twitter.png", alt: "twitter") %></a>
+                <a href="#"><%= image_tag("twitter.png", alt: "twitter") %></a>
+                <a href="#"><%= image_tag("twitter.png", alt: "twitter") %></a>
+                <a href="#"><%= image_tag("twitter.png", alt: "twitter") %></a>
             </div>
-                &copy; Copyright 2012 by <a href="http://www.lingulo.com">Lingulo</a>. All Rights Reserved.
+                &copy; Any licence? All Rights Reserved ?
         </div>
     </section>
 </footer>
