@@ -10,7 +10,7 @@ L'application web permet de faire des rapports sur n'importe quelle forêt, de c
 
 adresse du serveur heroku : https://acacias.herokuapp.com/
 
-adresse du projet GitHub : https://github.com/simplonco/acacias
+adresse du projet GitHub : https://github.com/acaciasforall/acacias-harvest
 
 To use it simply do a :
 * `bundle`
