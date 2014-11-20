@@ -1,5 +1,5 @@
 <div class="container">
-<%= form_for @report do |r| %>
+<%= form_for @report, url: reports_path do |r| %>
 
 	<%= r.label :user_name, 'Nom de l\'utilisateur'%><br>
 	<%= r.text_field :user_name %><br>
