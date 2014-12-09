@@ -1,21 +1,23 @@
 <div class="container-report">
-        <div class="report-list-title">
-          <h3><%= t ".new_entry_title", class: "report-list-title" %></h3>
-        </div>
-        <%= form_for @report do |r| %>
+  <div class="report-list-title">
+    <h3><%= t ".new_entry_title", class: "report-list-title" %></h3>
+  </div>
+  <%= form_for @report do |r| %>
 
-          <%= r.label :user_name, t(".user_name") %><br>
-          <%= r.text_field(:user_name, class: 'input-report') %><br>
-
-
-          <%= r.label :forest_name, t(".forest_name") %><br>
-          <%= r.text_field :forest_name, class: 'input-report' %><br>
+    <%= r.label :user_name, t(".user_name") %><br>
+    <%= r.text_field(:user_name, class: 'input-report') %><br>
 
 
-          <%= r.label :observation, t(".observation") %><br>
-          <%= r.text_area :observation, class: 'input-report' %><br>
+    <%= r.label :forest_name, t(".forest_name") %><br>
+    <%= r.text_field :forest_name, class: 'input-report' %><br>
 
-          <%= r.submit t(".send") %>
+    <%= r.label :observation, t(".observation") %><br>
+    <%= r.text_area :observation, class: 'input-report' %><br>
 
-        <% end %>
-      </div>
+    <%= r.label :forest_photo, t(".photos") %><br>
+    <%= r.file_field :forest_photo, class: 'input-report' %><br>
+
+    <%= r.submit t(".send") %>
+
+  <% end %>
+</div>

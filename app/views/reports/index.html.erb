@@ -18,6 +18,7 @@
           <td><%= report.user_name %></td>
           <td><%= report.forest_name %></td>
           <td><%= report.observation %></td>
+          <td><%= image_tag report.forest_photo %></td>
           <td>
             <%= link_to('Modifier', edit_report_path(report), class: 'report-button-sml') %>
             <%= link_to('Supprimer', report_path(report), method: :delete, class: 'report-button-sml', data: { confirm: 'Sûr ?' }) %>

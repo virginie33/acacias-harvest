@@ -38,7 +38,7 @@ class ReportsController < ApplicationController
 
   private
   def report_params
-    params.require(:report).permit(:user_name, :forest_name, :observation)
+    params.require(:report).permit(:user_name, :forest_name, :observation, :forest_photo)
   end
 
 end
