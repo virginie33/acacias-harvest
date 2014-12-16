@@ -1,13 +1,14 @@
 #!/bin/bash
 
 DIRECTION="git@heroku.com:acacias.git"
+BRANCH="master"
 
 echo "********** Déploiement **********"
 
 bundle exec rspec && \
-git pull origin master && \
-git push origin master && \
-git push $DIRECTION master && \
+git pull origin $BRANCH && \
+git push origin $BRANCH && \
+git push $DIRECTION $BRANCH && \
 heroku run rake db:migrate -a acacias
 
 echo "********** OK **********"
