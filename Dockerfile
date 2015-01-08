@@ -47,7 +47,7 @@ RUN gem install bundler --no-ri --no-rdoc
 # copy the Rails app
 # we assume we have cloned the "docrails" repository locally
 #  and it is clean; see the "prepare" script
-RUN git clone https://github.com/simplonco/acacias.git /rails
+RUN git clone https://github.com/acaciasforall/acacias-harvest.git /rails
 
 # create a "rails" user
 # the Rails application will live in the /rails directory

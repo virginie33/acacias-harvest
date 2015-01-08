@@ -17,6 +17,16 @@ To use it simply do a :
 * `rake db:migrate`
 * `rails s`
 
+To build a docker image with the Dockerfile:
+
+`sudo docker build -t YOUR_IMAGE_NAME .`
+
+Take care, this could be long
+
+You could run the image like this:
+
+`sudo docker run -d -p 3001:3000 acacias`
+
 ## Licence
 
 The MIT License
