@@ -1,4 +1,4 @@
-class ReportsController < ApplicationController	
+class ReportsController < ApplicationController
 
   def index
     @reports = Report.all
@@ -33,7 +33,7 @@ class ReportsController < ApplicationController
     @report = Report.find(params[:id])
     @report.destroy
     redirect_to reports_path
-    flash[:success] = "Rapport supprimé avec succès"		
+    flash[:success] = "Rapport supprimé avec succès"
   end
 
   private
