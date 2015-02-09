@@ -1,0 +1,16 @@
+class VisitorsController < ApplicationController
+def create
+@visitor = Visitor.new(visitor_params)
+if @visitor.save
+VisitorMailer.visit_reminder(@visitor).deliver
+flash[:success] = 'Email sent to you.'
+else
+flash[:failure] = 'Failed to send the email.'
+end
+redirect_to articles_path
+end
+private
+def visitor_params
+params.require(:visitor).permit(:email)
+end
+end
